@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { MapPin, FileText, Shield, AlertTriangle, Heart, Plane } from "lucide-react";
+import { MapPin, FileText, Shield, AlertTriangle, Heart, Plane, Edit, MessageSquare, Github, Database } from "lucide-react";
 
 // Sample countries data
 const countries = [
@@ -104,6 +104,57 @@ export default function TravelRequirementsHub() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Your personal border-control advisor. Get instant travel requirements, visa info, and cultural insights for any destination.
           </p>
+        </div>
+
+        {/* Feature Highlights */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <Card className="shadow-card-custom bg-gradient-card border-0 hover:scale-105 transition-transform duration-200">
+            <CardContent className="p-4 text-center">
+              <div className="mb-3 mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                <Edit className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-semibold mb-2">Refine & Customize</h3>
+              <p className="text-sm text-muted-foreground">
+                Tweak the design, animations, and layouts via prompts or visual edits.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-card-custom bg-gradient-card border-0 hover:scale-105 transition-transform duration-200">
+            <CardContent className="p-4 text-center">
+              <div className="mb-3 mx-auto w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                <MessageSquare className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="font-semibold mb-2">Master Prompting</h3>
+              <p className="text-sm text-muted-foreground">
+                Use "chat mode" to plan out your project without making edits. Clear, detailed prompts work best.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-card-custom bg-gradient-card border-0 hover:scale-105 transition-transform duration-200">
+            <CardContent className="p-4 text-center">
+              <div className="mb-3 mx-auto w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
+                <Github className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="font-semibold mb-2">GitHub Sync</h3>
+              <p className="text-sm text-muted-foreground">
+                Transfer your project's code to GitHub for two-way sync of edits.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-card-custom bg-gradient-card border-0 hover:scale-105 transition-transform duration-200">
+            <CardContent className="p-4 text-center">
+              <div className="mb-3 mx-auto w-12 h-12 bg-travel-green/10 rounded-full flex items-center justify-center">
+                <Database className="w-6 h-6 text-travel-green" />
+              </div>
+              <h3 className="font-semibold mb-2">Supabase Integration</h3>
+              <p className="text-sm text-muted-foreground">
+                Save information, add user accounts, or connect with other services easily.
+              </p>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Search Form */}
