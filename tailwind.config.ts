@@ -52,16 +52,6 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'travel-blue': {
-					DEFAULT: 'hsl(var(--travel-blue))',
-					light: 'hsl(var(--travel-blue-light))'
-				},
-				'travel-green': {
-					DEFAULT: 'hsl(var(--travel-green))',
-					light: 'hsl(var(--travel-green-light))'
-				},
-				'passport-blue': 'hsl(var(--passport-blue))',
-				'visa-green': 'hsl(var(--visa-green))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -77,16 +67,6 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
-			},
-			backgroundImage: {
-				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)',
-				'gradient-subtle': 'var(--gradient-subtle)'
-			},
-			boxShadow: {
-				'travel': 'var(--shadow-travel)',
-				'card-custom': 'var(--shadow-card)',
-				'elegant': 'var(--shadow-elegant)'
 			},
 			keyframes: {
 				'accordion-down': {
